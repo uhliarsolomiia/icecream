@@ -45,10 +45,15 @@ p {
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(/images/Мороженоone.png);
+  background: url(/images/Мороженоone.png) top, url(/images/Мороженое2.png) left, url(/images/Мороженое3.png) bottom;
   background-repeat: no-repeat;
-  background-size: contain;
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .products {
+    padding-bottom: 82px;
+    background-size: contain;
+  }
 }
 @media screen and (min-width: 768px) {
   .products {

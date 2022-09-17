@@ -37,10 +37,13 @@ p {
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(/images/Мороженоone.png);
+  background: url(/images/Мороженоone.png) top, url(/images/Мороженое2.png) left, url(/images/Мороженое3.png) bottom ;
   background-repeat: no-repeat;
-  background-size: contain;
   background-size: cover;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 82px;
+    background-size: contain;
+  }
   @media screen and (min-width: 768px) {
     background-image: url(/images/Мороженое\ фон.png);
     padding-bottom: 82px;
